@@ -33,7 +33,7 @@
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #9370DB;
+    border-top-color: rgb(8, 154, 252);
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -46,7 +46,7 @@
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #BA55D3;
+    border-top-color: rgb(8, 223, 252);
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -59,7 +59,7 @@
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #FF00FF;
+    border-top-color: rgb(66, 79, 248);
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
@@ -93,7 +93,7 @@
     }
 }
 .lzrfocus:focus{
-    color: #9a36eb;
+    color: rgb(8, 154, 252);
     font-weight: bold;
     font-style: italic;
     font-size: 11pt;
