@@ -39,7 +39,7 @@ function getusers(nid){
         '</div>'
         );
     paction='gUsr';
-    grecaptcha.execute('6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10', {action: paction}).then(function(token) {
+    grecaptcha.execute('6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm', {action: paction}).then(function(token) {
         var params = {
             "pid"      : nid,
             "paction"  : paction,
@@ -126,9 +126,9 @@ function misDatos(){
     $('#contentpageDIV').html(
         '<div class="card shadow mb-4">'+
         '    <div class="card-header py-3">'+
-        '      <h6 class="mt-2 font-weight-bold text-primary float-md-left">Información Personal</h6>'+
-        '      <div class="btn-group btn-group-toggle float-md-right">'+
-        '        <a href="#" class="btn btn-success btn-circle">'+
+        '      <h6 class="mt-2 font-weight-bold text-primary float-md-left ">Información Personal</h6>'+
+        '      <div class="btn-group btn-group-toggle float-md-right screenmobile">'+
+        '        <a href="#" class="btn btn-success btn-circle" title="Guardar">'+
         '            <i class="fas fa-check"></i>'+
         '        </a>'+
         '      </div>'+
@@ -140,7 +140,13 @@ function misDatos(){
 }
 
 function SwitchValue(Val){
-    if ($('#'+Val.id).val()=='0'){$('#'+Val.id).val('1');}else{$('#'+Val.id).val('0');}    
+    if ($('#'+Val.id).val()=='0'){
+        $('#'+Val.id).val('1');
+        $('#CalendarioTit').text('Tus eventos GOOGLE');
+    }else{
+        $('#'+Val.id).val('0');
+        $('#CalendarioTit').text('Nuestros eventos');
+    }    
 }
 
 function calendar(){
@@ -148,12 +154,11 @@ function calendar(){
     $('#contentpageDIV').html(
         '<div class="card shadow mb-4">'+
         '    <div class="card-header py-3">'+
-        '       <h6 id="CalendarioTit" class="mt-2 font-weight-bold text-primary float-md-left">Calendario: Dulce Rocío</h6>'+
-        '       <div class="btn-group btn-group-toggle float-md-right"><h6 id="CalendarioTit" class="mt-2 font-weight-bold text-success mr-2">Calendario Google</h6><input class="drSwitcherChk" type="checkbox" value="0" id="CalendarSwt" onClick="SwitchValue(this);"/><label class="drSwitcherLbl" for="CalendarSwt"></label></div>'+
+        '       <h6 id="CalendarioTit" class="mt-2 font-weight-bold text-primary float-md-left">Nuestros eventos</h6>'+
+        '       <div class="btn-group btn-group-toggle float-md-right screenmobile" title="Cambiar a Google"><input class="drSwitcherChk " type="checkbox" value="0" id="CalendarSwt" onClick="SwitchValue(this);"/><label class="drSwitcherLbl" for="CalendarSwt"></label></div>'+
         '    </div>'+
         '    <div class="card-body">'+
-        '    <div >'+
-        '       <div id="calendar" class="clndr"></div>'+
+        '       <div id="calendar" class="clndr screenmobile"></div>'+
         '       </div>'+
         '    </div>'+
        '</div>'
@@ -178,29 +183,29 @@ function calendar(){
         events: [
         {
             title: 'LOCAL',
-            start: '2021-08-11',
+            start: '2021-10-11',
             body: 'non-standard Event Object field', //arg=param on site=> arg.event.extendedProps.body
         },
         {
             title: 'Long Event',
             url: 'https://www.google.com/calendar/render?action=TEMPLATE&text=titulo&details=descripcion&location=location&dates=20210812T175100Z%2F20210814T175100Z',
-            start: '2021-08-12',
+            start: '2021-10-12',
             end: '2021-08-14'
         },
         {
             groupId: 999,
             title: 'Repeating Event',
-            start: '2021-08-13T16:00:00'
+            start: '2021-10-13T16:00:00'
         },
         {
             groupId: 999,
             title: 'Repeating Event',
-            start: '2021-08-05T16:00:00'
+            start: '2021-10-05T16:00:00'
         },
         {
             title: 'Click for Google',
             url: 'http://google.com/',
-            start: '2021-08-22'
+            start: '2021-10-22'
         }
         ],
         eventClick: function(arg) {

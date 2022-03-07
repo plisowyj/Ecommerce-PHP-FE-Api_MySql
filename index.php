@@ -162,7 +162,7 @@
     <script src="js/bnotify/bootstrap-notify.min.js"></script>
     <script src="vendor/calendar/main.min.js"></script>
     <script src="vendor/calendar/locales-all.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="js/l4z4r0.js"></script>
      

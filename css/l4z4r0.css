@@ -64,8 +64,6 @@
     animation: spin 1.5s linear infinite;
 }
 .clndr {
-    max-width: 1100px;
-    margin: 40px auto;
     padding: 0 10px;
   }
 @-webkit-keyframes spin {
@@ -105,7 +103,7 @@
 .drSwitcherChk[type=checkbox]{
 	height: 0;
 	width: 0;
-	visibility: hidden;
+	display: none;
     top:2px;
 }
 
@@ -143,4 +141,15 @@
 
 .drSwitcherLbl:active:after {
 	width: 30px;
+}
+
+.screenmobile{
+    display: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .screenmobile{
+        display: block;
+    }
 }

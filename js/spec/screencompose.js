@@ -139,7 +139,7 @@ trigger: 'focus'
 $('#cartmnu').on('click', function(){
     paction='get_sess';
 
-    grecaptcha.execute('6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10', {action: paction}).then(function(token) {
+    grecaptcha.execute('6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm', {action: paction}).then(function(token) {
         var params = {
             "paction" : paction,
             "ptoken"  : token
@@ -174,7 +174,7 @@ $('#bell').hide();
 grecaptcha.ready(function() {
     paction='get_sess'; 
     
-    grecaptcha.execute('6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10', {action: paction}).then(function(token) {
+    grecaptcha.execute('6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm', {action: paction}).then(function(token) {
         var params = {
             "paction" : paction,
             "ptoken"  : token
@@ -281,7 +281,7 @@ function Showme(sNombre){
 
 function uStarS(pfullname,pemail,pavatar,ppass,paction){
     var sResu='';
-    grecaptcha.execute('6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10', {action: paction}).then(function(token) {
+    grecaptcha.execute('6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm', {action: paction}).then(function(token) {
         var params = {
             "pfullname": pfullname,
             "pemail"   : pemail,
@@ -467,7 +467,7 @@ function forget(){
     });
     $('#myFor').on('click', function(){
         paction='vSend';
-        grecaptcha.execute('6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10', {action: paction}).then(function(token) {
+        grecaptcha.execute('6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm', {action: paction}).then(function(token) {
             var params = {
                 "pfullname": '_',
                 "pemail"   : $('#InputEmail').val(),
@@ -549,7 +549,7 @@ function login(){
     });
     $('#myLog').on('click', function(){
         paction='vLog';
-        grecaptcha.execute('6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10', {action: paction}).then(function(token) {
+        grecaptcha.execute('6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm', {action: paction}).then(function(token) {
             var params = {
                 "pfullname": '_',
                 "pemail"   : $('#InputEmail').val(),
@@ -632,7 +632,7 @@ function register(){
     });
     $('#myReg').on('click', function(){
         paction='vMail';
-        grecaptcha.execute('6Lda6qgZAAAAALn9v-hwpZoxT13r039X2ON36H10', {action: paction}).then(function(token) {
+        grecaptcha.execute('6LeawrYeAAAAAJVWKM3xBssjuMpLX_gjdQHxjLfm', {action: paction}).then(function(token) {
             var params = {
                 "pfullname": '_',
                 "pemail"   : $('#regmailinput').val(),

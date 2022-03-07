@@ -1,5 +1,5 @@
 <?php 
-$_SESSION["BaseUrl"]="https://www.dulcerocio.com.ar";
+$_SESSION["BaseUrl"]="https://www.l4zar0.com.ar";
 error_reporting(E_ERROR | E_PARSE); 
 
 function Enc($string, $key) {
@@ -95,7 +95,7 @@ function SendMailReg($mail,$nombre){
 
       $headers  = "MIME-Version: 1.0" . "\r\n";
       $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-      $headers .= 'From: "Confirmación de Registro Dulce Rocío"<registro@dulcerocio.com.ar>' . "\r\n";
+      $headers .= 'From: "Confirmación de Registro Dulce Rocío"<registro@l4zar0.com.ar>' . "\r\n";
 
       mail($mail,$subject,$message,$headers);
       return true; 
@@ -174,7 +174,7 @@ function SendMailForgot($mail){
 
       $headers  = "MIME-Version: 1.0" . "\r\n";
       $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-      $headers .= 'From: "Recuperación de acceso Dulce Rocío"<recupero@dulcerocio.com.ar>' . "\r\n";
+      $headers .= 'From: "Recuperación de acceso Dulce Rocío"<recupero@l4zar0.com.ar>' . "\r\n";
 
       mail($mail,$subject,$message,$headers);
       return true; 

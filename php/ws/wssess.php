@@ -8,7 +8,7 @@ $action = $_GET['paction'];
 $go = false;
 
 if (isset($token)&&isset($action)){
-  define("RECAPTCHA_V3_SECRET_KEY", '6Lda6qgZAAAAAJHLc3BLTxnFl02LO_OUVeIBSlUN');
+  define("RECAPTCHA_V3_SECRET_KEY", '6LeawrYeAAAAALX5Icqx-bLOqPCufBo_0EScOGn9');
 
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
